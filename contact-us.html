@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>The Royal Kingdom of Colchis</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- css -->
+        <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+        <link href="css/style.css" rel="stylesheet" />
+        <link href="css/contact-us.css" rel="stylesheet" />
+
+    </head>
+    <body>
+        <!-- start header -->
+        <header>
+            <img src="img/logo.jpg" alt="Royal Family Logo">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="royal-family.html">Royal Family</a></li>
+                    <li><a href="royal-assets.html">Royal Assets</a></li>
+                    <li><a href="contact-us.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- end header -->
+        <main class="container">
+            <h1>Contact the Royal Kingdom</h1> 
+            <form onsubmit="show_alert(this);">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="name..">
+            
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="email..">
+            
+                <label for="message">Message:</label>
+                <textarea id="message" name="message"></textarea>
+              
+                <input type="submit" value="Submit">
+            </form>
+        </main>
+        <script>
+            function show_alert() {
+                if(!confirm("Do you really want to submit your request?")) {
+                    return false;
+                }
+                this.form.submit();
+            }
+        </script>
+    </body>
+</html>

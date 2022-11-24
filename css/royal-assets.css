@@ -1,0 +1,15 @@
+table, th, td {
+    border: 2px solid white;
+    border-collapse: collapse;
+}
+
+td {
+  text-align: center;
+}
+
+th, td {
+  padding: 20px;
+  width: 200px;
+}
+
+tr:nth-child(even) {background-color: coral;}
